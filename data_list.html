@@ -1,0 +1,2104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: url('/static/images/大数据img/背景1.jpg') repeat center center ;
+        background-size:contain;
+    }
+    .mar_cont{margin: 0 1%;}
+    .tit1{
+        background: url('/static/images/大数据img/top.png') no-repeat center center;
+        width: 98%;
+        height: 11%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.5vw;
+        color: #23CEFD;
+    };
+  .type1{
+    background: #23CEFD;
+    margin-right: 5%;
+    }
+    .title1{
+        color: #23CEFD;
+        font-weight: bold;
+        font-size: 1.5vw;
+        width: 40%;
+        background-image: linear-gradient(to right,rgba(35,206,253,0.2),transparent);
+        padding: 0.5% 0;
+        margin:  2% 1%;
+    }
+    .cont1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 98%;
+        height: 40%;
+    }
+    .cont1>div{width: 32%;}
+    .cont2{
+        margin-top: 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #23CEFD;
+        font-size: 1vw;
+        width: 100%;
+    }
+    .cont2>div{
+    width: 47%;
+    background: url('/static/images/大数据img/1.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 5% 0;
+    }
+    .cont2>div>span{
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+    .cont2>div p{
+        color: #fff;
+    }
+    .piecont1{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .cont3{
+        margin-top: 3%;
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+        height: 20%;
+    }
+    .cont3>div{
+     width: 47%;
+     display: flex;
+     justify-content:space-between;
+    }
+    .cont4{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        color: #23CEFD;
+        font-size: 1vw;
+        width: 100%;  
+    }
+    .cont4>div{
+        height: 40%;
+    width: 32%;
+    background: url('/static/images/大数据img/1.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 5% 0;
+    }
+    .cont4>div>span{
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+    .cont4>div p{
+        color: #fff;
+    }
+    .cont5{
+        display: flex;
+        justify-content: space-between;
+        width: 98%;
+        height:40%;
+        margin-top: 10%;
+    }
+    .cont5 p{
+        color: #23CEFD;
+        font-size: 1vw;
+    }
+    .cont5 p span{
+        color: #fff;
+    }
+    #bar1{
+    background: url('/static/images/大数据img/1(4).png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+ padding: 1% 0 ;
+    }
+    #bar2{
+    background: url('/static/images/大数据img/1(6).png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+ padding: 1% 0 ;
+ display: flex;
+        flex-flow: column;
+        align-content:space-around
+    }
+    #bar2 p{color: #56DBFF;text-align: left;padding-left: 2%;font-size: 0.7vw;margin: 0;}
+    #bar3{
+    margin:0px; background: url('/static/images/大数据img/1(4).png') no-repeat 0 center; background-size:cover;
+    text-align: center;
+    background-clip: border-box;
+ padding: 1% 0 ;
+    }
+    .op{
+        display: flex;
+        width: 100%;
+        height: 4%;
+        line-height: 3%;
+        margin: 2% 0;
+    }
+    .op span{
+        color: #fff;
+        font-size: 0.7vw;
+        text-align: left;
+        margin-left: 2%;
+    }
+    .op div{
+        border-radius: 5px;
+    }
+    .wai{
+        background:#fff;width: 60%;display: flex;align-items: center;
+    }
+    .nei{
+        height: 100%;
+    }
+    .op .wai .radw{border-radius: 50%;width:1.5vw;height: 1.5vw;background: #fff;display: flex;justify-content: center;align-items: center;}
+    .op .wai .radw .radn{border-radius: 50%;width: 0.7vw;height:0.7vw;}
+    .op span{width: 20%;}
+    .cont6{
+        display: flex;
+        justify-content: space-between;
+        width: 98%;
+        height: 30%;
+    }
+    .cont6>div{
+width: 25%;
+height: 90%;
+background: url('/static/images/大数据img/2.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    }
+    .cont66,.cont88{
+        display: flex;
+        justify-content: space-around;
+margin-top: 10%;
+    }
+    .cont6>div>P,.cont8>div>P{
+        text-align: left;
+        background:linear-gradient(to right,#3256AC,#031231);
+        color: #fff;
+        margin: 0 3%;
+        font-size: 1vw;
+        margin-top: 3%;
+    }
+    .cont66 span{color: #fff;font-size: 0.5vw;}
+    .cont66>div:first-child{
+        color: #4FEDFC;
+    }
+    .cont66>div:last-child{
+        color: #398AD8;
+    }
+    .cont66 h2,.cont88 h2{
+        margin-top: 2%;
+    }
+    .cont7{
+        width: 98%;
+        height:37%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cont7>div{
+        width: 49%;
+        height: 100%;
+        background: url('/static/images/大数据img/2(2).png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    }
+    .cont8{
+        width: 98%;
+        height:29%;
+        display: flex;
+        justify-content: space-between; 
+        margin-top: 5%;
+    }
+    .cont8>div{
+        width: 24%;
+        height: 95%;
+        background: url('/static/images/大数据img/2(1).png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    }
+    .cont88  span{
+        color: #fff;font-size: 0.5vw;
+    }
+    .cont88 :nth-child(1) h2,.cont88 :nth-child(1) h2 span{
+    color: #56DBFF;
+    }
+    .cont88 :nth-child(2) h2,.cont88 :nth-child(2) h2 span{
+    color: #6CD378;
+    }
+    .cont88 :nth-child(3) h2,.cont88 :nth-child(3) h2 span{
+    color: #F67565;
+    }
+#gauge1{
+    background: transparent;
+    padding: 0;
+    height: 200%;
+    }
+#gauge2{
+    background: transparent;
+    padding: 0;
+    height: 200%;
+    }
+#gauge3{
+    background: transparent;
+    padding: 0;
+    height: 200%;
+    }
+    .cont9{width: 35%;height: 200%;}
+    .cont9>div{width: 100%;
+    height: 47%;
+        background: url('/static/images/大数据img/1.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .cont9>div span{
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+    .cont9>div{
+        color: #58DBFF;
+    }
+    .cont9>div p{color: #fff;}
+    body{
+        font-size: 1vw;
+    }
+    .xiandiv{
+        z-index: 1000;
+    }
+    .barsdfs{
+        background:url('/static/images/大数据img/2(4).png') no-repeat center center;
+        background-size: cover;
+        height: 8%;
+        width: 15%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1%;
+    }
+    .barsdfs:first-child{
+        margin-left: 10%;
+        background:url('/static/images/大数据img/2(3).png') no-repeat center center;
+        background-size: cover;
+        height: 8%;
+        width: 15%;
+    }
+
+
+</style>
+<body>
+    <div class="mtk" style="width: 100%;height: 100%;background: transparent;z-index: 1111;display: none;position: absolute;left: 0;top: 0;"></div>
+    <div class="mar_cont tit1">
+    集中数据送达分析
+    </div>
+
+    <p class="mar_cont title1"><span class="type1">丨</span>数据总览</p>
+    <div class="nyxian" style="width: 10%;height: 20%;position: absolute;left: 57%;top: 15%;color: #fff;background: rgba(0,0,0,0.3);text-align: center;display: none;border-radius: 10px;">
+        <p class="xian">未知</p>
+        <p>送达件数：<span>123</span></p>
+        <p>涉及人数：<span>456</span></p>
+    </div>
+    <div class="mar_cont cont1">
+        <div>
+       <div class="cont2">
+            <div><span class="sj0">100</span>案/<span class="sj1">650</span>单
+                <p>服务案件全部数量</p>
+            </div>
+            <div><span class="sj2">1500</span>人
+                <p>涉及受送达人</p>
+            </div>
+        </div>
+
+       <div class="cont2">
+            <div><span class="sj3">500</span>人
+                <p>合并受送达人</p>
+            </div>
+            <div><span class="sj4">30</span>案/<span class="sj5">220</span>单
+                <p>正在送达</p>
+            </div>
+        </div>
+       </div>
+     <div style="text-align: center;position: relative;height: 100%;" class="reli_box">
+        <!-- 各县标记 -->
+        <img class="xixiabj" src="/static/images/大数据img/r1.png" style="position: absolute;top: 15.97%;left: 11%;z-index: 100;width: 5%;" alt="">
+        <img class="xichuanbj" src="/static/images/大数据img/r1.png" style="position: absolute;top: 45.57%;left: 11%;z-index: 100;width: 5%;" alt="">
+        <img class="neixiangbj" src="/static/images/大数据img/r2.png" style="position: absolute;top: 33%;left: 29.3%;z-index: 100;width: 5%;" alt="">
+        <img class="nanzhaobj" src="/static/images/大数据img/r2.png" style="position: absolute;top: 23%;left: 47.56%;z-index: 100;width: 5%;" alt="">
+        <img class="fancghengbj" src="/static/images/大数据img/r2.png" style="position: absolute;top: 29%;left: 67.56%;z-index: 100;width: 5%;" alt="">
+        <img class="sheqibj" src="/static/images/大数据img/r3.png" style="position: absolute;top: 50%;left: 67.56%;z-index: 100;width: 5%;" alt="">
+        <img class="wanchengbj" src="/static/images/大数据img/r3.png" style="position: absolute;top: 50%;left: 57.56%;z-index: 100;width: 5%;" alt="">
+        <img class="wolongbj" src="/static/images/大数据img/r3.png" style="position: absolute;top: 43%;left: 50.9%;z-index: 100;width: 5%;" alt="">
+        <img class="zhenpingbj" src="/static/images/大数据img/r1.png" style="position: absolute;top: 43%;left: 39.5%;z-index: 100;width: 5%;" alt="">
+        <img class="dengzhoubj" src="/static/images/大数据img/r2.png" style="position: absolute;top: 69%;left: 34.4%;z-index: 100;width: 5%;" alt="">
+        <img class="xinyebj" src="/static/images/大数据img/r2.png" style="position: absolute;top: 76%;left: 47.6%;z-index: 100;width: 5%;" alt="">
+        <img class="tanghebj" src="/static/images/大数据img/r2.png" style="position: absolute;top: 76%;left: 62.6%;z-index: 100;width: 5%;" alt="">
+        <img class="tongbaibj" src="/static/images/大数据img/r2.png" style="position: absolute;top: 86%;left: 84.4%;z-index: 100;width: 5%;" alt="">
+        <!-- 各县隐藏块 -->
+        <div class="xixia xiandiv" style="z-index: 1000; width: 18%;height: 29%;position: absolute;background-color: transparent;top: 4.97%;left: 4.68%;border-radius: 41% 14% 0 45%;"></div>
+        <div class="xixia xiandiv" style="width: 16%;height: 10%;position: absolute;background-color: transparent;top: 8.97%;left: 13.68%;border-radius: 41% 14% 0 45%;"></div>
+        <!-- 新增 -->
+        <div class="xixia xiandiv" style="width: 5%;height: 12%;position: absolute;background-color: transparent;top: 33%;left: 22%;border-radius: 41% 14% 0 45%;"></div>
+        <!-- 新增/ -->
+        <div class="xichuan xiandiv" style="width: 9%;height: 21%;position: absolute;background-color: transparent;top: 35%;left: 9.4%;border-radius:0 50% 0 40%;"></div>
+        <div class="xichuan xiandiv" style="width: 13%;height: 13%;position: absolute;background-color: transparent;top: 61%;left: 17.4%;border-radius:0 85% 0 30%;"></div>
+        <div class="xichuan xiandiv" style="width: 13%;height: 6%;position: absolute;background-color: transparent;top: 56%;left: 10%;border-radius:0 50% 0 40%;"></div>
+        <div class="xichuan xiandiv" style="width: 3%;height: 18%;position: absolute;background-color: transparent;top: 39%;left: 18%;border-radius:0;"></div>
+        <div class="xichuan xiandiv" style="width: 9%;height: 9%;position: absolute;background-color: transparent;top: 31%;left: 1%;border-radius:42% 100% 0 40%;"></div>
+        <div class="neixiang xiandiv" style="width: 10%;height: 31%;position: absolute;background-color: transparent;top: 18%;left: 27%;border-radius:45% 50% 46% 50%;"></div>
+        <!-- 新增 -->
+        <div class="neixiang xiandiv" style="width: 7%;height: 10%;position: absolute;background-color: transparent;top: 49%;left: 23%;border-radius:45% 50% 46% 50%;"></div>
+        <div class="neixiang xiandiv" style="width: 7%;height: 6%;position: absolute;background-color: transparent;top: 47%;left: 29%;border-radius:45% 50% 46% 50%;"></div>
+        <!-- 新增/ -->
+        <div class="nanzhao xiandiv" style="width: 30%;height: 13%;position: absolute;background-color: transparent;top: 14%;left: 35%;border-radius:17% 30% 48% 50%;"></div>
+        <!-- 新增 -->
+        <div class="nanzhao xiandiv" style="width: 15%;height: 9%;position: absolute;background-color: transparent;top: 27%;left: 44.5%;border-radius:17% 30% 48% 50%;"></div>
+        <div class="nanzhao xiandiv" style="width: 14%;height: 5%;position: absolute;background-color: transparent;top: 10%;left: 39%;border-radius:17% 30% 48% 50%;"></div>
+        <!-- 新增/ -->
+        <div class="zhenping xiandiv" style="width: 13%;height: 24%;position: absolute;background-color: transparent;top: 37%;left: 36%;border-radius:39% 50% 36% 46%;"></div>
+       
+        <div class="dengzhou xiandiv" style="width: 14%;height: 25%;position: absolute;background-color: transparent;top: 61%;left: 32%;border-radius:0 57% 0 44%;"></div>
+        <!-- 新增 -->
+        <div class="dengzhou xiandiv" style="width: 6%;height: 10%;position: absolute;background-color: transparent;top: 55%;left: 30%;border-radius:0 57% 0 44%;"></div>
+        <div class="dengzhou xiandiv" style="width: 6%;height: 9%;position: absolute;background-color: transparent;top: 74%;left: 27%;border-radius:0 57% 0 44%;"></div>
+        <!-- 新增/ -->
+        <div class="wolong xiandiv" style="width: 9%;height: 11%;position: absolute;background-color: transparent;top: 38%;left: 49%;border-radius: 0 15% 5% 28%;"></div>
+        <!-- 新增 -->
+        <div class="wolong xiandiv" style="width: 3%;height: 24%;position: absolute;background-color: transparent;top: 47%;left: 50.5%;border-radius: 0 15% 5% 28%;"></div>
+        <div class="wolong xiandiv" style="width: 4%;height: 6%;position: absolute;background-color: transparent;top: 58%;left: 47%;border-radius: 0 15% 5% 28%;"></div>
+        <!-- 新增/ -->
+        <div class="wancheng xiandiv" style="width: 6%;height: 16%;position: absolute;background-color: transparent;top: 51%;left:54%;border-radius:45% 0 50% 0;"></div>
+        <!-- 新增 -->
+        <div class="wancheng xiandiv" style="width: 5%;height: 6%;position: absolute;background-color: transparent;top: 67%;left:53.5%;border-radius:45% 0 50% 0;"></div>
+        <div class="wancheng xiandiv" style="width: 5%;height: 12%;position: absolute;background-color: transparent;top: 46%;left:59%;border-radius:45% 0 50% 0;"></div>
+        <!-- 新增/ -->
+        <div class="xinye xiandiv" style="width: 9%;height: 20%;position: absolute;background-color: transparent;top: 72%;left: 47%;border-radius:12% 43% 50% 0;"></div>
+        <div class="fangcheng xiandiv" style="width: 26%;height: 16%;position: absolute;background-color:transparentd;top: 27%;left: 59%;border-radius:32% 50% 36% 0;"></div>
+        <!-- 新增 -->
+        <div class="fangcheng xiandiv" style="width: 6%;height: 10%;position: absolute;background-color:transparentd;top: 14%;left: 66%;border-radius:32% 50% 36% 0;"></div>
+        <div class="fangcheng xiandiv" style="width: 16%;height: 5%;position: absolute;background-color:transparentd;top: 24%;left: 63%;border-radius:32% 50% 36% 0;"></div>
+        <!-- 新增/ -->
+        <div class="sheqi xiandiv" style="width: 10%;height: 19%;position: absolute;background-color: transparent;top: 45%;left: 65%;border-radius:5% 14% 0 40%;"></div>
+        <div class="tanghe xiandiv" style="width: 15%;height: 21%;position: absolute;background-color: transparent;top: 72%;left: 57%;border-radius: 39% 0 35% 15%;"></div>
+        <!-- 新增 -->
+        <div class="tanghe xiandiv" style="width: 19%;height: 14%;position: absolute;background-color: transparent;top: 64%;left: 59%;border-radius: 39% 0 35% 15%;"></div>
+        <div class="tanghe xiandiv" style="width: 4%;height: 5%;position: absolute;background-color: transparent;top: 59%;left: 61.5%;border-radius: 39% 0 35% 15%;"></div>
+        <!-- 新增/ -->
+
+        <div class="tongbai xiandiv" style="width: 26%;height: 12%;position: absolute;background-color: transparent;top: 79%;left: 72%;border-radius: 0 0 44% 36%;"></div>
+        <!-- 新增 -->
+        <div class="tongbai xiandiv" style="width: 10%;height: 7%;position: absolute;background-color: transparent;top: 90%;left: 81%;border-radius: 0 0 44% 36%;"></div>
+        <div class="tongbai xiandiv" style="width: 26%;height: 12%;position: absolute;background-color: transparent;top: 79%;left: 72%;border-radius: 0 0 44% 36%;"></div>
+        <!-- 新增/ -->
+        <img src="/static/images/relitu.png" style="width: 100%;"class="relitu">
+            <canvas id="mycanvas" style="width: 100%;position: absolute;top: 0;left: 0;z-index: 200;">
+                
+            </canvas>
+        </div>
+     <div class="piecont1">
+       <div id="pie1" style="width:48%;height: 100%;"></div>
+       <div id="pie2" style="width:48%;height: 100%;"></div>
+     </div>
+    </div>
+
+    <div class="mar_cont cont3">
+      <div class="cont4">
+           <div><span>30</span>案/<span>220</span>单
+            <p>已完成</p>
+        </div>
+        <div><span>0</span>人
+            <p>逾期数量</p>
+        </div>
+       
+        <div><span>7</span>天
+            <p>平均用时</p>
+        </div>
+      </div>
+      <div>
+        <div id="pie3" style="width:50%;height: 160%;"></div>
+        <div id="pie4" style="width:50%;height: 160%;"></div>  
+      </div>
+    </div>
+    <div class="mar_cont cont5">
+        <div id="bar1" style="width:24%;height: 80%;">
+        </div>
+        <div id="bar2" style="width:45%;height: 80%;">
+            <p>规范指标（%）</p>
+            <div  class="op">
+                <span>邮寄回执单留证</span> 
+                <div class="wai" >
+                 <div class="nei"></div>
+                 <div class="radw">
+                     <div class="radn"></div>
+                 </div>
+             </div>
+              <span class="progresstext"></span>
+             </div>
+            <div  class="op">
+                <span>上门送达视频留证</span> 
+                <div class="wai" >
+                 <div class="nei"></div>
+                 <div class="radw">
+                     <div class="radn"></div>
+                 </div>
+             </div>
+              <span class="progresstext"></span>
+             </div>
+            <div  class="op">
+                <span>笔录取证</span> 
+                <div class="wai" >
+                 <div class="nei"></div>
+                 <div class="radw">
+                     <div class="radn"></div>
+                 </div>
+             </div>
+              <span class="progresstext"></span>
+             </div>
+            <div  class="op">
+                <span>拍照留痕</span> 
+                <div class="wai" >
+                 <div class="nei"></div>
+                 <div class="radw">
+                     <div class="radn"></div>
+                 </div>
+             </div>
+              <span class="progresstext"></span>
+             </div>
+            <div  class="op">
+                <span>电子送达录音</span> 
+                <div class="wai" >
+                 <div class="nei"></div>
+                 <div class="radw">
+                     <div class="radn"></div>
+                 </div>
+             </div>
+              <span class="progresstext"></span>
+             </div>
+            <div  class="op">
+                <span>短信留证</span> 
+                <div class="wai" >
+                 <div class="nei"></div>
+                 <div class="radw">
+                     <div class="radn"></div>
+                 </div>
+             </div>
+              <span class="progresstext"></span>
+             </div>
+        </div>
+        <div id="bar3" style="width:23%;height: 80%;"></div>
+    </div>
+<div class="mar_cont cont6">
+<div>
+    <p>效绩比指标-上门送达</p>
+    <div class="cont66">
+        <div>
+            <span>公里数</span>
+            <h2>70</h2>
+        </div>
+        <div>
+            <span>任务数</span>
+            <h2>70</h2>  
+        </div>
+    </div>
+</div>
+<div>
+    <p>效绩比指标-上门送达</p>
+    <div class="cont66">
+        <div>
+            <span>公里数</span>
+            <h2>70</h2>
+        </div>
+        <div>
+            <span>任务数</span>
+            <h2>70</h2>  
+        </div>
+    </div>
+</div>
+<div>
+    <p>效绩比指标-上门送达</p>
+    <div class="cont66">
+        <div>
+            <span>公里数</span>
+            <h2>70</h2>
+        </div>
+        <div>
+            <span>任务数</span>
+            <h2>70</h2>  
+        </div>
+    </div>
+</div>
+</div>
+<div  class="mar_cont cont7">
+   
+    <div style="color: #23CEFD;background: none; text-align: left;font-size:0.7vw;z-index: 1000;margin-left: 1%;"> 
+        法院各庭任务派发量
+    </div>
+    <div style="color: #23CEFD;background: none; text-align: left;font-size:0.7vw;z-index: 1000;margin-left: 2.5%;display: inline-flex;">
+        各庭送达完成方式对比
+        <div class="barsdfs">电子送达</div>
+        <div class="barsdfs">邮寄送达</div>
+        <div class="barsdfs">外勤送达</div>
+        <div class="barsdfs">公告送达</div>
+    </div>
+ </div>
+<div class="mar_cont cont7" style="margin-top:-19.5%">
+   
+   <div id="bar4"> 
+   </div>
+   <div id='bar5'></div>
+</div>
+<div class="mar_cont cont8">
+ <div>
+    <p>电子送达总览</p>
+    <div class="cont88">
+        <div>
+            <span>总体案件数量</span>
+            <h2>70 <span> 件</span></h2>
+        </div>
+        <div>
+            <span>正在送达中</span>
+            <h2>70<span> 件</span></h2>  
+        </div>
+        <div>
+            <span>已完成</span>
+            <h2>70<span> 件</span></h2>  
+        </div>
+    </div>
+ </div>
+ <div>
+    <p>上门送达总览</p>
+    <div class="cont88">
+        <div>
+            <span>总体案件数量</span>
+            <h2>70<span> 件</span></h2>
+        </div>
+        <div>
+            <span>正在送达中</span>
+            <h2>70<span> 件</span></h2>
+        </div>
+        <div>
+            <span>已完成</span>
+            <h2>70<span> 件</span></h2>  
+        </div>
+    </div>
+ </div>
+ <div>
+    <p>邮寄送达总览</p>
+    <div class="cont88">
+        <div>
+            <span>总体案件数量</span>
+            <h2>70<span> 件</span></h2>
+        </div>
+        <div>
+            <span>正在送达中</span>
+            <h2>70<span> 件</span></h2>
+        </div>
+        <div>
+            <span>已完成</span>
+            <h2>70<span> 件</span></h2>  
+        </div>
+    </div>
+ </div>
+ <div>
+    <p>公告送达总览</p>
+    <div class="cont88">
+        <div>
+            <span>总体案件数量</span>
+            <h2>70<span> 件</span></h2>
+        </div>
+        <div>
+            <span>正在送达中</span>
+            <h2>70<span> 件</span></h2>
+        </div>
+        <div>
+            <span>已完成</span>
+            <h2>70<span> 件</span></h2>  
+        </div>
+    </div>
+ </div>
+</div>
+<p class="mar_cont title1"><span class="type1">丨</span>电子送达</p>
+<div class="mar_cont cont3">
+    <div class="cont4">
+         <div><span>30</span>案/<span>220</span>单
+          <p>服务案件数量</p>
+      </div>
+      <div><span>0</span>人
+          <p>涉及受送达人</p>
+      </div>
+     
+      <div><span>7</span>天
+          <p>正在送达</p>
+      </div>
+         <div><span>30</span>案/<span>220</span>单
+          <p>已完成</p>
+      </div>
+      <div><span>0</span>人
+          <p>平均用时</p>
+      </div>
+     
+      <div id="gauge1">
+     
+      </div>
+    </div>
+    <div>
+      <div id="pie5" style="width:50%;height: 200%;"></div>
+      <div id="pie6" style="width:50%;height: 200%;"></div>  
+    </div>
+    
+
+  </div>
+
+
+  <div style="color: #fff;width: 98%;margin: 0 auto;margin-top: 20%;">123456789</div>
+
+
+  <p style="margin-top:20%;" class="mar_cont title1"><span class="type1">丨</span>上门送达</p>
+  <div class="mar_cont cont3">
+    <div class="cont4">
+         <div><span>30</span>案/<span>220</span>单
+          <p>服务案件数量</p>
+      </div>
+      <div><span>0</span>人
+          <p>涉及受送达人</p>
+      </div>
+     
+      <div><span>7</span>天
+          <p>正在送达</p>
+      </div>
+         <div><span>30</span>案/<span>220</span>单
+          <p>已完成</p>
+      </div>
+      <div><span>0</span>人
+          <p>平均用时</p>
+      </div>
+     
+      <div id="gauge2">
+     
+      </div>
+    </div>
+    <div>
+      <div id="pie7" style="width:45%;height: 190%;"></div>
+      <div class="cont9">
+        <div>
+            <div>
+            <span>220</span><span>单</span> 
+            <p>合计外出送达</p>
+        </div>
+        </div>
+        <div style="margin-top: 30%;">
+            <div>
+            <span>0</span>人
+            <p>涉及受送达人</p>
+        </div>
+        </div>
+       
+      </div>  
+    </div>
+  </div>  
+  <p style="margin-top:20%;" class="mar_cont title1"><span class="type1">丨</span>邮寄送达</p>
+  <div class="mar_cont cont3">
+    <div class="cont4">
+         <div><span>30</span>案/<span>220</span>单
+          <p>服务案件数量</p>
+      </div>
+      <div><span>0</span>人
+          <p>涉及受送达人</p>
+      </div>
+     
+      <div><span>7</span>天
+          <p>正在送达</p>
+      </div>
+         <div><span>30</span>案/<span>220</span>单
+          <p>已完成</p>
+      </div>
+      <div><span>0</span>人
+          <p>平均用时</p>
+      </div>
+     
+      <div id="gauge3">
+     
+      </div>
+    </div>
+    <div>
+      <div id="pie8" style="width:45%;height: 190%;"></div>
+      <div class="cont9">
+        <div>
+            <div>
+            <span>220</span><span>单</span> 
+            <p>合计外出送达</p>
+        </div>
+        </div>
+        <div style="margin-top: 30%;">
+            <div>
+            <span>0</span>人
+            <p>涉及受送达人</p>
+        </div>
+        </div>
+       
+      </div>  
+    </div>
+  </div>  
+  
+</body>
+
+    
+</body>
+<!-- <body style="height: 100%;width: 100%;background:url('/static/images/大数据img/背景.png')"></body> -->
+
+    <script type="text/javascript" src="/static/js/admin/echarts.min.js"></script>
+    <script src="/static/js/admin/jquery.min.js"></script>
+    <script src="/static/js/admin/echarts-gl.js"></script>
+    
+    <script>
+window.onload=function(){
+//规范指标
+$('.progresstext').eq(0).html('80%').css('color','#F34D4E ')
+$('.radn').eq(0).css('background','#F34D4E ')
+$('.nei').eq(0).css({'width':'80%','background':'linear-gradient(to right, #F34D4E , #ccc)'})
+
+$('.progresstext').eq(1).html('80%').css('color','#005AEF ')
+$('.radn').eq(1).css('background','#005AEF ')
+$('.nei').eq(1).css({'width':'80%','background':'linear-gradient(to right, #005AEF , #ccc)'})
+
+$('.progresstext').eq(2).html('80%').css('color','#63A546 ')
+$('.radn').eq(2).css('background','#63A546 ')
+$('.nei').eq(2).css({'width':'80%','background':'linear-gradient(to right, #63A546 , #ccc)'})
+
+$('.progresstext').eq(3).html('80%').css('color','#EF6BC4')
+$('.radn').eq(3).css('background','#EF6BC4')
+$('.nei').eq(3).css({'width':'80%','background':'linear-gradient(to right, #EF6BC4, #ccc)'})
+
+$('.progresstext').eq(4).html('80%').css('color','#FFAE00')
+$('.radn').eq(4).css('background','#FFAE00')
+$('.nei').eq(4).css({'width':'80%','background':'linear-gradient(to right, #FFAE00, #ccc)'})
+
+$('.progresstext').eq(5).html('10%').css('color','#FF7D37')
+$('.radn').eq(5).css('background','#FF7D37')
+$('.nei').eq(5).css({'width':'10%','background':'linear-gradient(to right, #FF7D37, #ccc)'})
+
+//echatrs图表
+var e=document.body.offsetWidth;
+ var myChart = echarts.init(document.getElementById('pie1'));
+    option =  {
+        title:{
+text:"案件送达方式占比",
+textStyle:{
+    color:"#fff",
+    fontSize:"100%"
+}
+        },
+    tooltip: {
+
+  transitionDuration:0,
+        trigger: 'item',
+        formatter: '{a} <br/>{b}: {c} ({d}%)'
+    },
+    color: ['#FFAE00', '#F53F8C', '#52FFFF', '#28B1FF'],
+    legend: {
+        icon:'circle',
+        left:"center",
+        orient: 'vertical',
+        bottom: 0,
+        itmeWidth:8,
+        itemHeight:8,
+        data: ['电子', '上门', '邮寄', '公告'],
+        textStyle:{
+            color:'#23CEFD',
+            fontSize:`80%`,
+            padding:-10
+        }
+    }, graphic:{
+            type:'text',
+            left:'center',
+            top:'35%',
+            style:{
+                text:'送达任务\n'+(sj6+sj7+sj8+sj9), //使用“+”可以使每行文字居中
+                textAlign:'center',
+                font:'italic bolder 100% cursive',
+                fill:'#fff',
+                width:30,
+                height:30
+            }
+        },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            minAngle:5,
+            avoidLabelOverlap: true, 
+            hoverAnimation:false,　
+            radius: ['50%', '40%'],
+            center: ["50%", "40%"], 
+            avoidLabelOverlap: false,
+            label: {
+                laign:'left',
+                show: false,
+                position: 'center',
+                normal:{
+                        textStyle : {
+                            fontSize : '80%'
+                        },
+                        formatter:'{d}%'
+                }
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '100%',
+                    fontWeight: 'bold',
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            data: [
+                {value: sj6, name: '电子'},
+                {value: sj7, name: '上门'},
+                {value: sj8, name: '邮寄'},
+                {value: sj9, name: '公告'},
+            ]
+        }
+    ]
+};
+myChart.setOption(option,true);
+var myChart = echarts.init(document.getElementById('pie2'));
+    option1 = {
+        title:{
+text:"案件送达完成率占比",
+textStyle:{
+    color:"#fff",
+    fontSize:'100%'
+}
+        },
+    tooltip: {
+        transitionDuration:0,
+        trigger: 'item',
+        formatter: '{a} <br/>{b}: {c} ({d}%)'
+    },
+    color: ['#1EB4D0', '#FDB42D', '#D70E53', '#9626FA','#1DBC8E'],
+    legend: {
+        icon:'circle',
+        itemGap:20,
+        orient: 'horizontal',
+        bottom:0,
+        itmeWidth:8,
+        itemHeight:8,
+        data: ['完成尽调退回', '完成尽调公告', '外勤送达成功', '电子送达成功','邮寄送达成功'],
+        textStyle:{
+            color:'#23CEFD',
+            fontSize:'80%'
+        }
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            minAngle:5,
+            avoidLabelOverlap: true, 
+            hoverAnimation:false,　
+            radius: ['50%', '40%'],
+            center: ["52%", "40%"], 
+            avoidLabelOverlap: false,
+            label: {
+                laign:'left',
+                show: false,
+                position: 'center',
+                normal:{
+                        textStyle : {
+                            fontSize : '80%'
+                        },
+                        formatter:'{d}%'
+                }
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '100%',
+                    fontWeight: 'bold',
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            data: [
+                {value: 335, name: '完成尽调退回'},
+                {value: 310, name: '完成尽调公告'},
+                {value: 234, name: '外勤送达成功'},
+                {value: 135, name: '电子送达成功'},
+                {value: 135, name: '邮寄送达成功'},
+            ]
+        }
+    ]
+};
+myChart.setOption(option1);
+var myChart = echarts.init(document.getElementById('pie3'));
+    option3 = {
+        title:{
+text:"纠纷类型占比",
+textStyle:{
+    color:"#fff",
+    fontSize:'100%'
+}
+        },
+    tooltip: {
+        transitionDuration:0,
+        trigger: 'item',
+        formatter: '{a} <br/>{b}: {c} ({d}%)'
+    },
+    color: ['#52FFFF', '#28B1FF', '#52FF97', '#FFAE00','#F53F8C'],
+    legend: {
+        icon:'circle',
+        right:"10%",
+        orient: 'vertical',
+        top:'20%',
+        itmeWidth:8,
+        itemHeight:8,
+        padding:0,
+        align:'left',
+        symbolKeepAspect:true,
+        hoverAnimation:false,
+        avoidLabelOverlap:false,
+        data: ['经济纠纷', '劳动纠纷', '财产纠纷', '借贷纠纷','婚姻纠纷'],
+        textStyle:{
+            color:'#23CEFD',
+            fontSize:'80%',
+            textAlign:'center'
+        }
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            minAngle:5,
+            hoverAnimation:false,　
+            radius: ['50%', '40%'],
+            center: ["35%", "40%"], 
+            avoidLabelOverlap: false,
+            hoveOffset:0,
+            selectedOffset:0,
+            label: {
+                laign:'left',
+                show: false,
+                position: 'center',
+                normal:{
+                        textStyle : {
+                            fontSize : '80%'
+                        },
+                        formatter:'{d}%'
+                }
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '100%',
+                    fontWeight: 'bold',
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            data: [
+                {value: 335, name: '经济纠纷'},
+                {value: 310, name: '劳动纠纷'},
+                {value: 234, name: '财产纠纷'},
+                {value: 135, name: '借贷纠纷'},
+                {value: 135, name: '婚姻纠纷'},
+            ]
+        }
+    ]
+};
+myChart.setOption(option3);
+var myChart = echarts.init(document.getElementById('pie4'));
+    option4 = {
+        title:{
+text:"当事人类型占比",
+textStyle:{
+    color:"#fff",
+    fontSize:"100%"
+}
+        },
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b}: {c} ({d}%)',
+        transitionDuration:0
+    },
+    color: ['#FFAE00', '#F53F8C', '#52FFFF', '#28B1FF'],
+    legend: {
+        icon:'circle',
+        left:0,
+        orient: 'horizontal',
+        bottom:0,
+        itmeWidth:10,
+        itemHeight:10,
+        data: ['个人', '银行', '公司', '行政单位'],
+        textStyle:{
+            color:'#23CEFD',
+            fontSize:'80%',
+            padding:1
+        }
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            minAngle:5,
+            avoidLabelOverlap: true, 
+            hoverAnimation:false,　
+            radius: ['50%', '40%'],
+            center: ["50%", "40%"], 
+            avoidLabelOverlap: false,
+            label: {
+                laign:'left',
+                show: false,
+                position: 'center',
+                normal:{
+                        textStyle : {
+                            fontSize :'80%'
+                        },
+                        formatter:'{d}%'
+                }
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '80%',
+                    fontWeight: 'bold',
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            data: [
+                {value: 335, name: '个人'},
+                {value: 310, name: '银行'},
+                {value: 234, name: '公司'},
+                {value: 135, name: '行政单位'}
+            ]
+        }
+    ]
+};
+myChart.setOption(option4);  
+var myChart = echarts.init(document.getElementById('bar1'));
+    option5 = {
+        tooltip: {
+        trigger: 'axis',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        },
+        formatter:function(params){
+         return params[0].data[1]
+        }
+    },
+        title: {
+    text: '效率指标',
+    textStyle: {
+      color: '#56DBFF',
+      fontSize:"100%"
+    },
+    subtext: '单位：件/天',
+    subtextStyle: {
+      color: '#fff',
+      fontSize:"90%"
+      
+    },
+    padding: [0, 0, 20,20]  // 位置
+  }, 
+           
+    dataset: {
+        source: [
+            ['score', 'amount', 'product'],
+            [1,89.3 , '电子送达'],
+            [2,57.1 , '邮寄送达'],
+            [5,74.4 , '上门送达'],
+        ]
+    },
+
+    grid: {containLabel: true},
+    xAxis: {
+        name: '天',
+         type: 'value',
+                        // x轴的字体样式
+                        axisLabel: {        
+                                show: true,
+                                textStyle: {
+                                  
+                                    fontSize:'100%'
+                                }
+                            },
+    },
+    yAxis: {
+         type: 'category',
+                        // x轴的字体样式
+                        axisLabel: {        
+                                show: true,
+                                textStyle: {
+                                  
+                                    fontSize:'100%'
+                                }
+                            },
+    },
+    visualMap: { 
+        show: false,
+        orient: 'horizontal',
+        top: '0',
+        min: 1,
+        max: 9,
+        // Map the score column to color
+        dimension: 0,
+        inRange: {
+            color: ['#D7DA8B','#E15457']
+        },
+        textStyle:{
+            color:'#fff',
+            fontSize:'100%'
+        }
+    },
+    textStyle: {  // 图列内容样式
+      color: '#fff',  // 字体颜色
+      backgroundColor: 'black', // 字体背景色
+      fontSize:'70%'
+    },
+    series: [
+        {
+            type: 'bar',
+            encode: {
+                // Map the "amount" column to X axis.
+                x: 'score',
+                // Map the "product" column to Y axis
+                y: 'product'
+            }
+        }
+    ]
+};
+myChart.setOption(option5);
+var myChart = echarts.init(document.getElementById('bar3'));
+option6 = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        },
+        formatter:function(params){
+         return params[0].data[1]
+        }
+    },
+        title: {
+    text: '送达团队任务完成量',
+    textStyle: {
+      color: '#23CEFD',
+      fontSize:"100%"
+    },
+    padding: [0, 0, 20, 20]  // 位置
+  },
+    dataset: {
+        source: [
+            ['score', 'amount', 'product'],
+            [100,89.3 , '公告组'],
+            [222,57.1 , '邮寄组'],
+            [150,74.4 , '外勤组'],
+            [1500,74.4 , '电子组'],
+        ]
+    },
+    
+    grid: {containLabel: true},
+    xAxis: {
+        name: '天',
+         type: 'value',
+                        // x轴的字体样式
+                        axisLabel: {        
+                                show: true,
+                                textStyle: {
+                                  
+                                    fontSize:'100%'
+                                }
+                            },
+    },
+    yAxis: {
+         type: 'category',
+         name:'送达团队',
+                        // x轴的字体样式
+                        axisLabel: {        
+                                show: true,
+                                textStyle: {
+                                  
+                                    fontSize:'100%'
+                                }
+                            },
+    },
+    visualMap: {
+        show: false,
+        orient: 'horizontal',
+        top: '0',
+        min: 0,
+        max: 2000,
+        // Map the score column to color
+        dimension: 0,
+        inRange: {
+            color: ['#D7DA8B','#E15457']
+        },
+        textStyle:{
+            color:'#fff'
+        }
+    },
+    textStyle: {  // 图列内容样式
+      color: '#fff',  // 字体颜色
+      backgroundColor: 'black',  // 字体背景色
+      fontSize:"70%"
+    },
+    series: [
+        {
+            type: 'bar',
+            encode: {
+                // Map the "amount" column to X axis.
+                x: 'score',
+                // Map the "product" column to Y axis
+                y: 'product'
+            }
+        }
+    ]
+};
+myChart.setOption(option6);
+//法庭数组
+var ary=[]
+var myChart = echarts.init(document.getElementById('bar4'));
+option7 = {
+    color: ['#3398DB'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        },
+        formatter:function(params){
+            return params[0].data
+        }
+    },
+    min:0,
+    max:1000,
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    textStyle: {  // 图列内容样式
+      color: '#fff',  // 字体颜色
+      backgroundColor: 'black' // 字体背景色
+    },
+    
+    xAxis: [
+        {
+            type: 'category',
+            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'qqq'],
+            axisTick: {
+                alignWithLabel: true
+            },
+            axisLabel: {        
+                                show: true,
+                                textStyle: {
+                                  
+                                    fontSize:'100%'
+                                }
+                            }
+            
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value' ,
+            axisLabel:{        
+                                show: true,
+                                textStyle: {
+                                  
+                                    fontSize:'100%'
+                                }
+                            },
+        },
+       
+    ],
+    series: [
+        {
+            name: '111',
+            type: 'bar',
+            barWidth: '60%',
+            data: [10, 52, 200, 334, 390, 330, 220],
+            textStyle:{
+                color:"#fff"
+            }
+        },
+        
+    ]
+};
+myChart.setOption(option7);
+var myChart = echarts.init(document.getElementById('bar5'));
+option8 = {
+    color: ['#3398DB'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    textStyle: {  // 图列内容样式
+      color: '#fff',  // 字体颜色
+      backgroundColor: 'black'  // 字体背景色
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            axisTick: {
+                alignWithLabel: true
+            },
+            axisLabel: {        
+                                show: true,
+                                textStyle: {
+                                  
+                                    fontSize:'100%'
+                                }
+                            },
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            axisLabel: {        
+                                show: true,
+                                textStyle: {
+                                  
+                                    fontSize:'100%'
+                                }
+                            },
+        }
+    ],
+    series: [
+        {
+            name: '直接访问',
+            type: 'bar',
+            barWidth: '60%',
+            data: [10, 52, 200, 334, 390, 330, 220]
+        }
+    ]
+};
+myChart.setOption(option8);
+var myChart = echarts.init(document.getElementById('gauge1'));
+option9 = {
+    tooltip: {
+        formatter: '{a} <br/>{b} : {c}%'
+    },
+    series: [
+        {
+            name: '业务指标',
+            type: 'gauge',
+            min:0,
+            max:5,
+            detail: {formatter: '{value}%'},
+            data: [{value: 2.5,name:'电子送达平均耗时(天)'}],
+            axisLine: {
+			            lineStyle: {
+			                width:2
+			            }
+			        },
+                    splitLine: {
+			            length: '10%',
+			            lineStyle: {
+			                width:1
+			            }
+			        },
+                    detail:{
+                        textStyle:{
+                            fontSize:'100%'
+                        }
+                    },
+                    axisLable:{
+                        textStyle:{
+                            fontSize:'100%'
+                        }
+                    },
+                    pointer: {				// 仪表盘指针。
+	            	show: true,				// 是否显示指针,默认 true。
+	            	length: "70%",			// 指针长度，可以是绝对数值，也可以是相对于半径的百分比,默认 80%。
+	            	width: 5,				// 指针宽度,默认 8。
+	            },
+                title: {				// 仪表盘标题。
+	            	show: true,				// 是否显示标题,默认 true。
+	            	offsetCenter: [0,"100%"],//相对于仪表盘中心的偏移位置，数组第一项是水平方向的偏移，第二项是垂直方向的偏移。可以是绝对的数值，也可以是相对于仪表盘半径的百分比。
+	            	color: "#fff",			// 文字的颜色,默认 #333。
+	            	fontSize:'100%',			// 文字的字体大小,默认 15。
+	            }
+        }
+    ]
+};
+myChart.setOption(option9);
+
+var myChart = echarts.init(document.getElementById('pie5'));
+    option10 = {
+        title:{
+text:"电子送达成功占比",
+textStyle:{
+    color:"#fff",
+    fontSize:'100%'
+}
+        },
+    tooltip: {
+        transitionDuration:0,
+        trigger: 'item',
+        formatter: '{a} <br/>{b}: {c} ({d}%)'
+    },
+    color: ['#FFAE00', '#1FB5FC'],
+    legend: {
+        icon:'circle',
+        left:"center",
+        orient: 'horizontal',
+        bottom: 0,
+        itmeWidth:8,
+        itemHeight:8,
+        data: ['短信','窗口'],
+        textStyle:{
+            color:'#23CEFD',
+            fontSize:'80%'
+        }
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            minAngle:5,
+            avoidLabelOverlap: true, 
+            hoverAnimation:false,　
+            radius: ['50%', '40%'],
+            center: ["50%", "40%"], 
+            avoidLabelOverlap: false,
+            label: {
+                laign:'left',
+                show: false,
+                position: 'center',
+                normal:{
+                        textStyle : {
+                            fontSize : '80%'
+                        },
+                        formatter:'{d}%'
+                }
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '80%',
+                    fontWeight: 'bold',
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            data: [
+                {value: 335, name: '短信'},
+                {value: 310, name: '窗口'},
+            ]
+        }
+    ]
+};
+myChart.setOption(option10);
+var myChart = echarts.init(document.getElementById('pie6'));
+    option11 = {
+        title:{
+text:"电子送达失败原因占比",
+textStyle:{
+    color:"#fff",
+    fontSize:"100%"
+}
+        },
+    tooltip: {
+        transitionDuration:0,
+        trigger: 'item',
+        formatter: '{a} <br/>{b}: {c} ({d}%)'
+    },
+    color: ['#52FFFF', '#28B1FF', '#FFAE00', '#F53F8C'],
+    legend: {
+        icon:'circle',
+        left:0,
+        orient: 'horizontal',
+        bottom:0,
+        itmeWidth:8,
+        itemHeight:8,
+        itemGap:20,
+        data: ['不是机主本人', '停机', '挂断', '拒不配合'],
+        textStyle:{
+            color:'#23CEFD',
+            fontSize:'80%'
+        }
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            minAngle:5,
+            avoidLabelOverlap: true, 
+            hoverAnimation:false,　
+            radius: ['0%', '40%'],
+            center: ["50%", "40%"], 
+            avoidLabelOverlap: false,
+            label: {
+                laign:'left',
+                show: false,
+                position: 'center',
+                normal:{
+                        textStyle : {
+                            fontSize :'80%'
+                        },
+                        formatter:'{d}%'
+                }
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '80%',
+                    fontWeight: 'bold',
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            data: [
+                {value: 335, name: '不是机主本人'},
+                {value: 310, name: '停机'},
+                {value: 234, name: '挂断'},
+                {value: 135, name: '拒不配合'}
+            ]
+        }
+    ]
+};
+myChart.setOption(option11);
+var myChart = echarts.init(document.getElementById('pie7'));
+    option12 = {
+        title:{
+text:"外勤送达结果占比",
+textStyle:{
+    color:"#fff",
+    fontSize:"100%"
+}
+        },
+    tooltip: {
+        transitionDuration:0,
+        trigger: 'item',
+        formatter: '{a} <br/>{b}: {c} ({d}%)'
+    },
+    color: ['#52FFFF', '#28B1FF', '#F53F8C'],
+    legend: {
+        icon:'circle',
+        left:0,
+        orient: 'horizontal',
+        bottom:0,
+        itmeWidth:8,
+        itemHeight:8,
+        itemGap:20,
+        data: ['送达穷尽', '留置送达', '正常签收'],
+        textStyle:{
+            color:'#23CEFD',
+            fontSize:'80%'
+        }
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            minAngle:5,
+            avoidLabelOverlap: true, 
+            hoverAnimation:false,　
+            radius: ['0%', '40%'],
+            center: ["50%", "40%"], 
+            avoidLabelOverlap: false,
+            label: {
+                laign:'left',
+                show: false,
+                position: 'center',
+                normal:{
+                        textStyle : {
+                            fontSize : '80%'
+                        },
+                        formatter:'{d}%'
+                }
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '80%',
+                    fontWeight: 'bold',
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            data: [
+                {value: 335, name: '送达穷尽'},
+                {value: 310, name: '留置送达'},
+                {value: 234, name: '正常签收'},
+            ]
+        }
+    ]
+};
+myChart.setOption(option12);
+var myChart = echarts.init(document.getElementById('gauge2'));
+option13 = {
+    tooltip: {
+        formatter: '{a} <br/>{b} : {c}%'
+    },
+    series: [
+        {
+            name: '业务指标',
+            type: 'gauge',
+            min:0,
+            max:5,
+            detail: {formatter: '{value}%'},
+            data: [{value: 2.5,name:'外勤送达平均耗时(天)'}],
+            axisLine: {
+			            lineStyle: {
+			                width:2
+			            }
+			        },
+                    splitLine: {
+			            length: 15,
+			            lineStyle: {
+			                width:1
+			            }
+			        },
+                    detail:{
+                        textStyle:{
+                            fontSize:'100%'
+                        }
+                    },
+                    axisLable:{
+                        textStyle:'100%'
+                    },
+                    pointer: {				// 仪表盘指针。
+	            	show: true,				// 是否显示指针,默认 true。
+	            	length: "70%",			// 指针长度，可以是绝对数值，也可以是相对于半径的百分比,默认 80%。
+	            	width: 5,				// 指针宽度,默认 8。
+	            },
+                title: {				// 仪表盘标题。
+	            	show: true,				// 是否显示标题,默认 true。
+	            	offsetCenter: [0,"100%"],//相对于仪表盘中心的偏移位置，数组第一项是水平方向的偏移，第二项是垂直方向的偏移。可以是绝对的数值，也可以是相对于仪表盘半径的百分比。
+	            	color: "#fff",			// 文字的颜色,默认 #333。
+	            	fontSize: '100%',			// 文字的字体大小,默认 15。
+	            }
+        }
+    ]
+};
+myChart.setOption(option13);
+var myChart = echarts.init(document.getElementById('gauge3'));
+option14 = {
+    tooltip: {
+        formatter: '{a} <br/>{b} : {c}%'
+    },
+    series: [
+        {
+            name: '业务指标',
+            type: 'gauge',
+            min:0,
+            max:5,
+            detail: {formatter: '{value}%'},
+            data: [{value: 2.5,name:'邮寄送达平均耗时(天)'}],
+            axisLine: {
+			            lineStyle: {
+			                width:2
+			            }
+			        },
+                    splitLine: {
+			            length: 15,
+			            lineStyle: {
+			                width:1
+			            }
+			        },
+                    detail:{
+                        textStyle:{
+                            fontSize:'100%'
+                        }
+                    },
+                    axisLable:{
+                        textStyle:'100%'
+                    },
+                    pointer: {				// 仪表盘指针。
+	            	show: true,				// 是否显示指针,默认 true。
+	            	length: "70%",			// 指针长度，可以是绝对数值，也可以是相对于半径的百分比,默认 80%。
+	            	width: 5,				// 指针宽度,默认 8。
+	            },
+                title: {				// 仪表盘标题。
+	            	show: true,				// 是否显示标题,默认 true。
+	            	offsetCenter: [0,"100%"],//相对于仪表盘中心的偏移位置，数组第一项是水平方向的偏移，第二项是垂直方向的偏移。可以是绝对的数值，也可以是相对于仪表盘半径的百分比。
+	            	color: "#fff",			// 文字的颜色,默认 #333。
+	            	fontSize: '100%',			// 文字的字体大小,默认 15。
+	            }
+        }
+    ]
+};
+myChart.setOption(option14);
+var myChart = echarts.init(document.getElementById('pie8'));
+    option15 = {
+        title:{
+text:"邮寄退件原因分布占比",
+textStyle:{
+    color:"#fff",
+    fontSize:"100%"
+}
+        },
+    tooltip: {
+        transitionDuration:0,
+        trigger: 'item',
+        formatter: '{a} <br/>{b}: {c} ({d}%)'
+    },
+    color: ['#CD5C5C', '#00CED1', '#9ACD32', '#FFC0CB','#005aef'],
+    legend: {
+        icon:'circle',
+        left:0,
+        orient: 'horizontal',
+        bottom:0,
+        itmeWidth:8,
+        itemHeight:8,
+        itemGap:20,
+        data: ['不是机主本人', '停机', '挂断', '拒不配合'],
+        textStyle:{
+            color:'#23CEFD',
+            fontSize:'80%'
+        }
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            minAngle:5,
+            avoidLabelOverlap: true, 
+            hoverAnimation:false,　
+            radius: ['0%', '40%'],
+            center: ["50%", "40%"], 
+            avoidLabelOverlap: false,
+            label: {
+                laign:'left',
+                show: false,
+                position: 'center',
+                normal:{
+                        textStyle : {
+                            fontSize : '80%'
+                        },
+                        formatter:'{d}%'
+                }
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '80%',
+                    fontWeight: 'bold',
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            data: [
+                {value: 335, name: '不是机主本人'},
+                {value: 310, name: '停机'},
+                {value: 234, name: '挂断'},
+                {value: 135, name: '拒不配合'}
+            ]
+        }
+    ]
+};
+myChart.setOption(option15);
+}
+window.addEventListener('resize', () => {
+    e=document.body.offsetWidth;
+     var relitu_h=document.getElementsByClassName('relitu')[0].offsetHeight;
+     document.getElementsByClassName('reli_box')[0].style.height=relitu_h+'px';
+    canvas.style.height=relitu_h+'px';
+      const myChart = echarts.init(document.getElementById('pie1'))
+      const myChart1 = echarts.init(document.getElementById('pie2'))
+      const myChart2 = echarts.init(document.getElementById('pie3'))
+      const myChart3 = echarts.init(document.getElementById('pie4'))
+      const myChart4 = echarts.init(document.getElementById('pie5'))
+      const myChart5 = echarts.init(document.getElementById('pie6'))
+      const myChart6 = echarts.init(document.getElementById('pie7'))
+      const myChart7 = echarts.init(document.getElementById('pie8'))
+      const myChart8 = echarts.init(document.getElementById('bar1'))
+      const myChart9 = echarts.init(document.getElementById('bar3'))
+      const myChart10 = echarts.init(document.getElementById('bar4'))
+      const myChart11 = echarts.init(document.getElementById('bar5'))
+      const myChart12 = echarts.init(document.getElementById('gauge1'))
+      const myChart13 = echarts.init(document.getElementById('gauge2'))
+      const myChart14 = echarts.init(document.getElementById('gauge3'))
+      myChart.resize()
+      myChart1.resize()
+      myChart2.resize()
+      myChart3.resize()
+      myChart4.resize()
+      myChart5.resize()
+      myChart6.resize()
+      myChart7.resize()
+      myChart8.resize()
+      myChart9.resize()
+      myChart10.resize()
+      myChart11.resize()
+      myChart12.resize()
+      myChart13.resize()
+      myChart14.resize()
+
+    })
+    var bb=document.body
+
+    bb.ondblclick=function(){
+     window.location.href='www.baidu.com'
+    }
+//canvas的高等于图片高度
+    var canvas = document.getElementById("mycanvas"); 
+        var context = canvas.getContext("2d"); 
+        var canvas_w=canvas.offsetWidth;
+        var relitu_h=document.getElementsByClassName('relitu')[0].offsetHeight;
+        canvas.style.height=relitu_h+'px';
+        document.getElementsByClassName('reli_box')[0].style.height=relitu_h+'px';
+ //各县点击事件  
+ function suibian(a,x,y){
+        canvas.height=canvas.height;
+        $('.nyxian').fadeOut()
+        $('.mtk').css('display','block')
+
+        context.strokeStyle='#23CEFD'
+        var x=x;
+        var y=y;
+        context.moveTo(x,y)
+        var xixiatime=setInterval (function(){
+            if(y>1){
+                y-=2;
+                context.lineTo(x,y)
+            }else if(y=1){
+                x+=2
+                context.lineTo(x,y)}
+            context.stroke()
+            if(x>220){
+                window.clearInterval(xixiatime)
+                if(a==15){
+                $('.xian').html('西峡');
+                }else if(a==22){
+                    $('.xian').html('淅川');
+                }
+                else if(a==14){
+                    $('.xian').html('内乡');
+                }
+                else if(a==20){
+                    $('.xian').html('南召');
+                }
+                else if(a==18){
+                    $('.xian').html('方城');
+                }
+                else if(a==17){
+                    $('.xian').html('社旗');
+                }
+                else if(a==5){
+                    $('.xian').html('宛城区');
+                }
+                else if(a==19){
+                    $('.xian').html('卧龙');
+                }
+                else if(a==11){
+                    $('.xian').html('镇平');
+                }
+                else if(a==10){
+                    $('.xian').html('邓州');
+                }
+                else if(a==12){
+                    $('.xian').html('新野');
+                }
+                else if(a==13){
+                    $('.xian').html('唐河');
+                }
+                $('.nyxian').fadeIn()
+                $('.mtk').css('display','none')
+            }
+        },0.1)
+    }
+    $('.xixia').click(function(){
+   suibian(15,40.5,30.5)
+    })
+    //淅川
+    $('.xichuan').click(function(a=22){
+        suibian(22,40,70)
+    })
+    //内乡
+    $('.neixiang').click(function(a=14){
+        suibian(14,95,55)
+    })
+    //南召
+    $('.nanzhao').click(function(a=20){
+        suibian(20,150,40)
+    })
+    //方城
+    $('.fangcheng').click(function(a=18){
+        suibian(18,210,50)
+    })
+    //社旗
+    $('.sheqi').click(function(a=17){
+        suibian(17,210,80)
+    })
+    //宛城区
+    $('.wancheng').click(function(a=5){
+        suibian(5,180,80)
+    })
+    //卧龙区
+    $('.wolong').click(function(a=19){
+        suibian(19,160,70)
+    })
+    //镇平
+    $('.zhenping').click(function(a=11){
+        suibian(11,125,70)
+    })
+    //邓州
+    $('.dengzhou').click(function(a=10){
+        suibian(10,110,110)
+    })
+    //新野
+    $('.xinye').click(function(a=12){
+        suibian(12,150,120)
+    })
+    //唐河
+    $('.tanghe').click(function(a=13){
+        suibian(13,195,120)
+    })
+    //桐柏
+    $('.tongbai').click(function(a=21){
+        canvas.height=canvas.height;
+        $('.nyxian').fadeOut()
+        $('.mtk').css('display','block')
+
+        context.strokeStyle='#23CEFD'
+        var x=260;
+        var y=135;
+        context.moveTo(260,135)
+        var xichuantime=setInterval (function(){
+            y-=2
+            context.lineTo(x,y)
+            context.stroke()
+            if(y<40){
+                window.clearInterval(xichuantime)
+                $('.xian').html('桐柏');
+                $('.nyxian').fadeIn()
+                $('.mtk').css('display','none')
+            }
+        },0.1)
+    })
+
+//桐柏
+$('.tongbai').click(function(){
+    canvas.height=canvas.height;  
+    $('.nyxian').fadeOut()
+    $('.mtk').css('display','block')
+
+　context.strokeStyle='#23CEFD'
+var x=260;
+var y=135; 
+ context.moveTo(260,135)
+       var xichuantime=setInterval (function(){ 
+           y-=2
+       context.lineTo(x,y)
+        context.stroke()
+        if(y<40){
+           window.clearInterval(xichuantime)
+           $('.xian').html('桐柏');
+           $('.nyxian').fadeIn()
+           $('.mtk').css('display','none')
+        }
+       },0.1)
+})
+
+//模拟动态数据
+var sj0=100;
+ var sj1=650;
+ var sj2=1500;
+ var sj3=500;
+ var sj4=30;
+ var sj5=220;
+ var sj6=120;
+ var sj7=220;
+ var sj8=320;
+ var sj9=250;
+ var myChart = echarts.init(document.getElementById('pie1'));
+ function refreshData(sj6,sj7,sj8,sj9){
+     //刷新数据
+      var option = myChart.getOption();
+      option.series[0].data[0].value = sj6;
+      option.series[0].data[1].value = sj7;
+      option.series[0].data[2].value = sj8;
+      option.series[0].data[3].value = sj9;
+      console.log(option.graphic)
+      option.graphic[0].elements[0].style.text='送达任务\n'+(sj6+sj7+sj8+sj9)
+      myChart.setOption(option);    
+}
+
+function yanse(sj,sjs){
+    $(`.${sjs}`).html(sj).css('background','rgb(0, 90, 239)')
+ 
+//  if($(`.${sjs}`).css('background-color')=='rgb(0, 90, 239)'){
+//            var sjtime=setTimeout(function(){
+//           $(`.${sjs}`).css('background','none'),1000})
+//        }
+       var sjtime=setTimeout(function(){
+        if($(`.${sjs}`).css('background-color')=='rgb(0, 90, 239)'){
+            $(`.${sjs}`).css('background','none')
+        }
+       },500)
+}
+//模拟动态数据
+ var shujutime=setInterval(function(){
+   if( Math.ceil(Math.random()*10)>2&&Math.ceil(Math.random()*10)<=4){
+       sj0+=1;  
+     yanse(sj0,'sj0')
+       sj6+=10
+   }else if(Math.ceil(Math.random()*10)>4&&Math.ceil(Math.random()*10)<=6){
+       sj2+=1;
+       yanse(sj2,'sj2')
+       sj5+=1;
+       yanse(sj5,'sj5')
+       sj7+=10
+   }else if(Math.ceil(Math.random()*10)>6&&Math.ceil(Math.random()*10)<=8){
+    sj3+=1;
+    yanse(sj3,'sj3')
+    sj8+=10
+   }
+   else if(Math.ceil(Math.random()*10)>8){
+    sj4+=1;
+    yanse(sj4,'sj4')
+    sj9+=10
+   }else{
+       sj1+=1
+       yanse(sj1,'sj1')
+   }
+ 
+   refreshData(sj6,sj7,sj8,sj9)
+ },2000)
+ 
+   </script>
+</html>
